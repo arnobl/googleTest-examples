@@ -1,6 +1,6 @@
 #! /bin/sh
 
-mkdir out/
+mkdir out
 cd out/
 g++ ../src/*.h ../test/*.cpp -o ./test -lgmock -lgtest -lpthread -Wall -Wextra -fprofile-arcs -ftest-coverage \
 	&& ./test \
