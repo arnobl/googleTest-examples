@@ -5,12 +5,12 @@
 
 `sudo dnf install gtest-devel gmock-devel`
 
-# Ubuntu
+## Ubuntu
 
 `sudo apt install libgtest-dev libgmock-dev`
 
-# Tests compilation and execution
+# Layout
 
-`g++ -lgtest -lgtest_main -lpthread src/test/*.cpp -o out/test && ./out/test`
+`gtest-example` contains C++ code and a `gtest` test suite.
 
-
+`mock-example` contains C++ code and a `gtest` test suite that uses `gmock`. `gcov` and `lcov` are used to measure code coverage.
