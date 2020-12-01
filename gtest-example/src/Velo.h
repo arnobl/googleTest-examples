@@ -12,10 +12,10 @@ class Velo {
 		Velo() {
 			guidon = nullptr;
 		}
-		inline Guidon* getGuidon() const {
+		Guidon* getGuidon() const {
 			return this->guidon;
 		}
-		inline void setGuidon(Guidon* g) {
+		void setGuidon(Guidon* g) {
 			this->guidon = g;
 		}
 };
