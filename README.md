@@ -3,11 +3,11 @@
 
 ## Fedora
 
-`sudo dnf install gtest-devel gmock-devel`
+`sudo dnf install gtest-devel gmock-devel lcov`
 
 ## Ubuntu
 
-`sudo apt install libgtest-dev libgmock-dev`
+`sudo apt install libgtest-dev libgmock-dev lcov`
 
 # Layout
 
