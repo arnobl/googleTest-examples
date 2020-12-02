@@ -5,20 +5,21 @@
 class Velo;
 
 class Guidon {
-	private:
-		Velo* velo;
+  private:
+    Velo* velo;
 
-	public:
-		Guidon() {
-			velo = nullptr;
-		}
-	
-		Velo* getVelo() const {
-			return velo;
-		}
-		void setVelo(Velo* v) {
-			this->velo = v;
-		}
+  public:
+    Guidon() {
+      velo = nullptr;
+    }
+  
+    Velo* getVelo() const {
+      return velo;
+    }
+    void setVelo(Velo* v) {
+      this->velo = v;
+    }
 };
 
 #endif
+

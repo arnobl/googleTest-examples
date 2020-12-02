@@ -6,27 +6,27 @@
 
 class GuidonTest : public ::testing::Test {
  protected:
- 	Guidon guidon;
- 	Velo* velo;
-	
+  Guidon guidon;
+  Velo* velo;
+
   void SetUp() override {
-  	velo = nullptr;
+    velo = nullptr;
   }
 
   void TearDown() override {
-		delete velo;
+    delete velo;
   }
 };
 
-TEST_F(GuidonTest, CreatGuidonNoVelo)
+TEST_F(GuidonTest, CreateGuidonNoVelo)
 {
     ASSERT_EQ(guidon.getVelo(), nullptr);	
 }
 
-TEST_F(GuidonTest, SetVeloOK)
-{
-		velo = new Velo();
-		guidon.setVelo(velo);
-    ASSERT_EQ(guidon.getVelo(), velo);
-}
+//TEST_F(GuidonTest, SetGetVeloOK)
+//{
+//    velo = new Velo();
+//    guidon.setVelo(velo);
+//    ASSERT_EQ(guidon.getVelo(), velo);
+//}
 
