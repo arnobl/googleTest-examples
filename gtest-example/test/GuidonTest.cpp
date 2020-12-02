@@ -23,10 +23,10 @@ TEST_F(GuidonTest, CreateGuidonNoVelo)
     ASSERT_EQ(guidon.getVelo(), nullptr);	
 }
 
-//TEST_F(GuidonTest, SetGetVeloOK)
-//{
-//    velo = new Velo();
-//    guidon.setVelo(velo);
-//    ASSERT_EQ(guidon.getVelo(), velo);
-//}
+TEST_F(GuidonTest, SetGetVeloOK)
+{
+    velo = new Velo();
+    guidon.setVelo(velo);
+    ASSERT_EQ(guidon.getVelo(), velo);
+}
 

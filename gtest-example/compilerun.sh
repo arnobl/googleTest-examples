@@ -9,5 +9,6 @@ g++ ../src/*.h ../test/*.cpp -o ./testbin -O0 -lgtest -lpthread -Wall -Wextra -f
 	&& ./testbin \
 	&& lcov --rc lcov_branch_coverage=1 -c -d . -o report.out \
 	&& lcov -a basecoverage.out -a report.out -o report.info \
+	&& lcov --remove report.info '/usr/*' '*/test/*' --output-file report.info \
 	&& genhtml --branch-coverage report.info
 
