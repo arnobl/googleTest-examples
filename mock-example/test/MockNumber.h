@@ -7,9 +7,10 @@
 
 class MockNumber : public Number {
  public:
-  MOCK_METHOD(int, getValue, (), (const, override));
-  MOCK_METHOD(void, add, (const int val), (override));
+   MOCK_METHOD(int, getValue, (), (const, override));
+   MOCK_METHOD(void, add, (const int val), (override));
 };
 
 
 #endif
+
